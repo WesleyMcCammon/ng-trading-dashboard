@@ -1,0 +1,233 @@
+[
+  {
+    "symbol": "MNQ",
+    "name": "Micro E-mini Nasdaq-100",
+    "contractType": "Micro",
+    "category": "Indicies",
+    "tickSize": 0.25,
+    "tickValue": 0.50,
+    "pointValue": 2.00,
+    "ticksPerPoint": 4,
+    "frontMonth": "MNQU26"
+  },
+  {
+    "symbol": "MES",
+    "name": "Micro E-mini S&P 500",
+    "contractType": "Micro",
+    "category": "Indicies",
+    "tickSize": 0.25,
+    "tickValue": 1.25,
+    "pointValue": 5.00,
+    "ticksPerPoint": 4,
+    "frontMonth": "MESU26"
+  },
+  {
+    "symbol": "MYM",
+    "name": "Micro E-mini Dow Jones",
+    "contractType": "Micro",
+    "category": "Indicies",
+    "tickSize": 1,
+    "tickValue": 0.50,
+    "pointValue": 0.50,
+    "ticksPerPoint": 1,
+    "frontMonth": "MYMU26"
+  },
+  {
+    "symbol": "RTY",
+    "name": "E-mini Russell 2000",
+    "contractType": "E-mini",
+    "category": "Indicies",
+    "tickSize": 0.10,
+    "tickValue": 5.00,
+    "pointValue": 50.00,
+    "ticksPerPoint": 10,
+    "frontMonth": "RTYU26"
+  },
+  {
+    "symbol": "MGC",
+    "name": "Micro Gold",
+    "contractType": "Micro",
+    "category": "Metals",
+    "tickSize": 0.10,
+    "tickValue": 1.00,
+    "pointValue": 10.00,
+    "ticksPerPoint": 10,
+    "frontMonth": "MGCQ26"
+  },
+  {
+    "symbol": "MCL",
+    "name": "Micro WTI Crude Oil",
+    "contractType": "Micro",
+    "category": "Energies",
+    "tickSize": 0.01,
+    "tickValue": 1.00,
+    "pointValue": 100.00,
+    "ticksPerPoint": 100,
+    "frontMonth": "MCLQ26"
+  },
+  {
+    "symbol": "NQ",
+    "name": "E-mini Nasdaq-100",
+    "contractType": "E-mini",
+    "category": "Indicies",
+    "tickSize": 0.25,
+    "tickValue": 5.00,
+    "pointValue": 20.00,
+    "ticksPerPoint": 4,
+    "frontMonth": "NQU26"
+  },
+  {
+    "symbol": "YM",
+    "name": "E-mini Dow Jones",
+    "contractType": "E-mini",
+    "category": "Indicies",
+    "tickSize": 1,
+    "tickValue": 5.00,
+    "pointValue": 5.00,
+    "ticksPerPoint": 1,
+    "frontMonth": "YMU26"
+  },
+  {
+    "symbol": "GC",
+    "name": "Gold",
+    "contractType": "Standard",
+    "category": "Metals",
+    "tickSize": 0.10,
+    "tickValue": 10.00,
+    "pointValue": 100.00,
+    "ticksPerPoint": 10,
+    "frontMonth": "GCQ26"
+  },
+  {
+    "symbol": "CL",
+    "name": "WTI Crude Oil",
+    "contractType": "Standard",
+    "category": "Energies",
+    "tickSize": 0.01,
+    "tickValue": 10.00,
+    "pointValue": 1000.00,
+    "ticksPerPoint": 100,
+    "frontMonth": "CLQ26"
+  },
+  {
+    "symbol": "M2K",
+    "name": "Micro E-mini Russell 2000",
+    "contractType": "Micro",
+    "category": "Indicies",
+    "tickSize": 0.10,
+    "tickValue": 0.50,
+    "pointValue": 5.00,
+    "ticksPerPoint": 10,
+    "frontMonth": "M2KU26"
+  },
+  {
+    "symbol": "6E",
+    "name": "Euro FX",
+    "contractType": "Standard",
+    "category": "Currency",
+    "tickSize": 0.00005,
+    "tickValue": 6.25,
+    "pointValue": 12.50,
+    "ticksPerPoint": 2,
+    "frontMonth": "6EU26"
+  },
+  {
+    "symbol": "6B",
+    "name": "British Pound",
+    "contractType": "Standard",
+    "category": "Currency",
+    "tickSize": 0.0001,
+    "tickValue": 6.25,
+    "pointValue": 6.25,
+    "ticksPerPoint": 1,
+    "frontMonth": "6BU26"
+  },
+  {
+    "symbol": "6J",
+    "name": "Japanese Yen",
+    "contractType": "Standard",
+    "category": "Currency",
+    "tickSize": 0.0000005,
+    "tickValue": 6.25,
+    "pointValue": 12.50,
+    "ticksPerPoint": 2,
+    "frontMonth": "6JU26"
+  },
+  {
+    "symbol": "6A",
+    "name": "Australian Dollar",
+    "contractType": "Standard",
+    "category": "Currency",
+    "tickSize": 0.0001,
+    "tickValue": 10.00,
+    "pointValue": 10.00,
+    "ticksPerPoint": 1,
+    "frontMonth": "6AU26"
+  },
+  {
+    "symbol": "6C",
+    "name": "Canadian Dollar",
+    "contractType": "Standard",
+    "category": "Currency",
+    "tickSize": 0.00005,
+    "tickValue": 5.00,
+    "pointValue": 10.00,
+    "ticksPerPoint": 2,
+    "frontMonth": "6CU26"
+  },
+  {
+    "symbol": "6S",
+    "name": "Swiss Franc",
+    "contractType": "Standard",
+    "category": "Currency",
+    "tickSize": 0.0001,
+    "tickValue": 12.50,
+    "pointValue": 12.50,
+    "ticksPerPoint": 1,
+    "frontMonth": "6SU26"
+  },
+  {
+    "symbol": "6N",
+    "name": "New Zealand Dollar",
+    "contractType": "Standard",
+    "category": "Currency",
+    "tickSize": 0.0001,
+    "tickValue": 10.00,
+    "pointValue": 10.00,
+    "ticksPerPoint": 1,
+    "frontMonth": "6NU26"
+  },
+  {
+    "symbol": "M6E",
+    "name": "Micro Euro FX",
+    "contractType": "Micro",
+    "category": "Currency",
+    "tickSize": 0.0001,
+    "tickValue": 1.25,
+    "pointValue": 1.25,
+    "ticksPerPoint": 1,
+    "frontMonth": "M6EU26"
+  },
+  {
+    "symbol": "M6A",
+    "name": "Micro Australian Dollar",
+    "contractType": "Micro",
+    "category": "Currency",
+    "tickSize": 0.0001,
+    "tickValue": 1.00,
+    "pointValue": 1.00,
+    "ticksPerPoint": 1,
+    "frontMonth": "M6AU26"
+  },
+  {
+    "symbol": "SI",
+    "name": "Silver",
+    "contractType": "Standard",
+    "category": "Metals",
+    "tickSize": 0.005,
+    "tickValue": 25.00,
+    "pointValue": 5000.00,
+    "ticksPerPoint": 200,
+    "frontMonth": "SIN26"
+  }
+]

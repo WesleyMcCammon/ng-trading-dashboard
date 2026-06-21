@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import categoriesData from '../data/categories.json';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CategoryService {
-  readonly categories: string[] = ['Indicies', 'Energies', 'Metals', 'Currency'];
+  readonly categories: string[] = categoriesData;
 
   private selectedSet = new Set<string>();
   private selectedSubject = new BehaviorSubject<string[]>([]);
