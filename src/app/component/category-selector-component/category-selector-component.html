@@ -1,0 +1,10 @@
+<div class="instrument-card p-3" (click)="toggle()" style="cursor: pointer;">
+    <div style="display:flex;flex-direction: row;">
+        <div style="flex:1">{{categoryName}}</div>
+        @if(isSelected) {
+        <div style="display:flex;justify-content: flex-end;">
+            <i class="bi bi-check-circle-fill text-success"></i>
+        </div>
+        }
+    </div>
+</div>

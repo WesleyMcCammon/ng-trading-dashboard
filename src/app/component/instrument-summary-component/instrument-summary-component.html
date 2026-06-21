@@ -1,0 +1,71 @@
+<div class="container-fluid py-4">
+
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 style="margin:0">{{contract.symbol}}</h2>
+            <small class="text-secondary">{{contract.name}} &bull; {{contract.contractType}} &bull; {{contract.frontMonth}}</small>
+        </div>
+        <span style="cursor:pointer;font-size:1.4rem" (click)="closeEvent.emit()">
+            <i class="bi bi-x-lg"></i>
+        </span>
+    </div>
+
+    <!-- Price -->
+    <div class="instrument-card p-3 mb-4">
+        <app-instrument-price-component [contract]="contract"></app-instrument-price-component>
+    </div>
+
+    <!-- Contract Specs -->
+    <div class="row g-3 mb-4">
+        <div class="col-6 col-md-3">
+            <div class="instrument-card p-3 text-center">
+                <div class="text-secondary" style="font-size:0.75rem">Tick Size</div>
+                <div class="price">{{contract.tickSize}}</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="instrument-card p-3 text-center">
+                <div class="text-secondary" style="font-size:0.75rem">Tick Value</div>
+                <div class="price">${{contract.tickValue | number:'1.2-2'}}</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="instrument-card p-3 text-center">
+                <div class="text-secondary" style="font-size:0.75rem">Point Value</div>
+                <div class="price">${{contract.pointValue | number:'1.2-2'}}</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="instrument-card p-3 text-center">
+                <div class="text-secondary" style="font-size:0.75rem">Ticks / Point</div>
+                <div class="price">{{contract.ticksPerPoint}}</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart -->
+    <div class="chart-placeholder mb-4" style="height:300px;display:flex">
+        Chart
+    </div>
+
+    <!-- Levels + Risk -->
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="instrument-card p-3">
+                <app-instrument-levels-component title="Above Bid" [contract]="contract" filter="above"></app-instrument-levels-component>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="instrument-card p-3">
+                <app-instrument-levels-component title="Below Bid" [contract]="contract" filter="below"></app-instrument-levels-component>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="instrument-card p-3">
+                <app-trade-risk-component></app-trade-risk-component>
+            </div>
+        </div>
+    </div>
+
+</div>

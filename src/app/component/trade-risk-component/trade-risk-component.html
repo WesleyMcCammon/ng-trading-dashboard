@@ -1,0 +1,33 @@
+<h6>Trade Profile</h6>
+
+<div class="d-grid gap-2 mb-3" style="grid-template-columns: 1fr 1fr">
+    <button
+        class="btn btn-sm"
+        [ngClass]="side() === 'buy' ? 'btn-success' : 'btn-secondary'"
+        (click)="selectSide('buy')"
+    >Buy</button>
+    <button
+        class="btn btn-sm"
+        [ngClass]="side() === 'sell' ? 'btn-danger' : 'btn-secondary'"
+        (click)="selectSide('sell')"
+    >Sell</button>
+</div>
+
+<div class="level level-column">
+    <span style="display: flex; flex-direction: row;border-bottom: 1px solid #232323;padding-bottom:5px">
+        <span style="flex:1">Stop</span>
+        <span>22590.25</span>
+    </span>
+    <span style="display: flex; flex-direction: row;border-bottom: 1px solid #232323;padding-bottom:5px">
+        <span style="flex:1">Profit Target</span>
+        <span>22590.25</span>
+    </span>
+    <span style="display: flex; flex-direction: row;border-bottom: 1px solid #232323;padding-bottom:5px">
+        <span style="flex:1">Risk</span>
+        <span>$200</span>
+    </span>
+    <span style="display: flex; flex-direction: row;padding-bottom:5px">
+        <span style="flex:1">Contracts</span>
+        <span>12</span>
+    </span>
+</div>

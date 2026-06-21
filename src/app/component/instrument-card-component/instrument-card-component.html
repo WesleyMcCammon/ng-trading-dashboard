@@ -1,0 +1,26 @@
+<div class="instrument-card p-3">
+
+    <div class="section-title">
+        <div class="d-flex justify-content-between">
+            <h4>{{contract.symbol}}</h4>
+            <span style="cursor:pointer" (click)="expand.emit(contract)"><i class="bi bi-arrows-fullscreen"></i></span>
+        </div>
+        <app-instrument-price-component [contract]="contract"></app-instrument-price-component>
+    </div>
+
+    <div class="chart-placeholder">
+        Chart
+    </div>
+
+    <div class="row mt-3">
+
+        <div class="col-6">
+            <app-instrument-levels-component title="Above Bid" [contract]="contract" [indicatorDisplayCount]="5" filter="above"></app-instrument-levels-component>
+        </div>
+
+        <div class="col-6">
+            <app-instrument-levels-component title="Below Bid" [contract]="contract" [indicatorDisplayCount]="5" filter="below"></app-instrument-levels-component>            
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,20 @@
+@if (quote()) {
+  <div class="price" style="display: flex; flex-direction: row">
+    <div class="col-3" style="display: flex; flex-direction: row">
+      <span style="opacity: 0.5; margin-right: 6px">bid</span>
+      <span>{{ quote()!.bid | number: decimalFormat() }}</span>
+    </div>
+    <div class="col-3" style="display: flex; flex-direction: row">
+      <span style="opacity: 0.5; margin-right: 6px">ask</span>
+      <span>{{ quote()!.ask | number: decimalFormat() }}</span>
+    </div>
+    <div
+      class="col-6"
+      [ngClass]="delta() >= 0 ? 'delta-positive' : 'delta-negative'"
+      style="display: flex; justify-content: flex-end"
+    >
+      {{ delta() >= 0 ? '+' : '' }}{{ delta() | number: decimalFormat() }}
+      ({{ deltaPercent() >= 0 ? '+' : '' }}{{ deltaPercent() | number: '1.2-2' }}%)
+    </div>
+  </div>
+}

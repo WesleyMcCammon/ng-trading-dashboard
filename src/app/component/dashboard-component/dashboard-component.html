@@ -1,0 +1,43 @@
+<div class="container-fluid py-4">
+
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2>Futures Trading Dashboard</h2>
+            <small class="text-secondary">Market Overview</small>
+        </div>
+        <button class="btn btn-primary" (click)="refresh()">Refresh</button>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="row mb-4">
+        @for(categoryName of categoryNames; track categoryName) {
+        <div class="col-md-2">
+            <app-category-selector-component [categoryName]="categoryName"></app-category-selector-component>
+        </div>
+        }
+    </div>
+
+    <!-- Instrument Cards -->
+    <div class="row g-4">
+        @for(instrument of visibleInstruments; track instrument.symbol) {
+        <div class="col-xl-4 col-lg-6">
+            <app-instrument-card-component
+                [contract]="instrument"
+                (expand)="selectedContract.set($event)">
+            </app-instrument-card-component>
+        </div>
+        }
+    </div>
+
+</div>
+
+<!-- Full-screen overlay -->
+<div class="summary-overlay" [class.open]="!!selectedContract()">
+    @if (selectedContract()) {
+    <app-instrument-summary-component
+        [contract]="selectedContract()!"
+        (closeEvent)="selectedContract.set(null)">
+    </app-instrument-summary-component>
+    }
+</div>
